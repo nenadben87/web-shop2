@@ -1,0 +1,125 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191919;
+  color: #fff;
+  padding: 30px;
+    .contacts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+        .contact {
+          display: flex;
+          flex-direction: row;
+          margin-left: 10px;
+          margin-right: 10px;
+            i {
+              margin-right: 15px;
+            }
+        }
+        .contact.address,
+        .contact.phone {
+          margin-bottom: 20px;
+        }
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      p {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .social-icons {
+        a {
+          color: #fff;
+          margin-left: 6px;
+          margin-right: 6px;
+        }
+      }
+    }
+}
+
+// Responsive ///////////////////////////////////////
+@media(max-width: 912px){
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+      .social {
+        margin-bottom: 40px;
+          .social-icons {
+            i {
+              font-size: 25px;
+            }
+          }
+      }
+
+      .contacts {
+        margin-bottom: 40px;
+          .contact {
+            i {
+              font-size: 20px;
+            }
+          }
+      }
+  }
+}
+
+@media(max-width: 667px){
+  .footer {
+    .contacts {
+      display: flex;
+      flex-direction: column;
+        .contact.email {
+          margin-bottom: 20px;
+        }
+    }
+  }
+}
+
+@media(max-width: 363px){
+  .footer {
+    .contacts {
+      .contact {
+        i {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 357px){
+  .footer {
+    .contacts {
+      .contact {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 327px){
+  .footer {
+    .contacts {
+      .contact {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+// for larger screens///////
+@media(min-width: 2560px){
+  .footer {
+    .copyright,
+    .contact,
+    .social {
+      font-size: 28px;
+    }
+  }
+}

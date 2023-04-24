@@ -1,0 +1,118 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #191919;
+  color: #fff;
+  padding: 30px;
+}
+.footer .contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer .contacts .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer .contacts .contact i {
+  margin-right: 15px;
+}
+.footer .contacts .contact.address,
+.footer .contacts .contact.phone {
+  margin-bottom: 20px;
+}
+.footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer .social p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.footer .social .social-icons a {
+  color: #fff;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+@media (max-width: 912px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer .social {
+    margin-bottom: 40px;
+  }
+  .footer .social .social-icons i {
+    font-size: 25px;
+  }
+  .footer .contacts {
+    margin-bottom: 40px;
+  }
+  .footer .contacts .contact i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 667px) {
+  .footer .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .contacts .contact.email {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 363px) {
+  .footer .contacts .contact i {
+    font-size: 15px;
+  }
+}
+@media (max-width: 357px) {
+  .footer .contacts .contact p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 327px) {
+  .footer .contacts .contact p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 2560px) {
+  .footer .copyright,
+  .footer .contact,
+  .footer .social {
+    font-size: 28px;
+  }
+}

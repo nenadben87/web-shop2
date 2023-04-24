@@ -1,0 +1,129 @@
+$mens-color: #189ad3;
+$womens-color: #ff6289;
+
+.home-images {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.home-images .left-img img,
+.home-images .right-img img {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+.home-images {
+  overflow-x: hidden;
+  .left-img {
+    .mens-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: $mens-color;
+      opacity: 0.5;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+         a {
+          color: #fff;
+          font-size: 32px;
+          border: 1px solid #fff;
+          padding: 10px 15px;
+          border-radius: 3px;
+         }
+         a:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+         }
+    }
+  }
+
+  .right-img {
+    .womens-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: $womens-color;
+      opacity: 0.6;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+         a {
+          color: #fff;
+          font-size: 32px;
+          border: 1px solid #fff;
+          padding: 10px 15px;
+          border-radius: 3px;
+          background-color: $womens-color;
+         }
+         a:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+         }
+    }
+  }
+}
+
+// Responsive /////////////////////////////
+@media (max-width: 867px){
+  .home-images {
+    .left-img,
+    .right-img {
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media(max-width: 757px){
+  .home-images {
+    .left-img,
+    .right-img {
+      .mens-overlay,
+      .womens-overlay {
+        a {
+          font-size: 25px;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 551px){
+  .home-images {
+    display: flex;
+    flex-direction: column;
+     .left-img {
+      margin-bottom: -5px;
+     }
+    .left-img,
+      .right-img {
+        img {
+          width: 100vw;
+        }
+      }
+
+      .left-img {
+        .mens-overlay {
+         width: 100%;
+        }
+      }
+      .right-img {
+        .womens-overlay {
+         width: 100%;
+         margin-top: 100vh;
+         padding-bottom: 10px;
+        }
+      }
+  }
+}
