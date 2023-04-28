@@ -6,15 +6,6 @@ import { ItemContext } from "../contexts/ItemContext";
 
 const RightSide = ({ product }) => {
 
-  // let sameProducts = []
-  // const myId = 15
-  // const strId = String(myId)
-  // sameProducts.push(myId)
-  // const position = String(sameProducts.length + 100)
-  // const concated = strId.concat(position)
-  // const numbered = Number(concated)
-  // console.log(numbered)
-
   const details = React.useRef(null)
   const contact = React.useRef(null)
   const offers = React.useRef(null)

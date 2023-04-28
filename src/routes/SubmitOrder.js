@@ -99,7 +99,7 @@ const SubmitOrder = () => {
         phone: phoneInput.current.value
       }
 
-      fetch('http://localhost:8000/orders', {
+      fetch('https://products-databse.herokuapp.com/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -130,7 +130,7 @@ const SubmitOrder = () => {
   let orderNumber;
 
   function getLastOrder(){
-    fetch('http://localhost:8000/orders')
+    fetch('https://products-databse.herokuapp.com/orders')
       .then(response => response.json())
       .then(data => {
         if(data[data.length - 1].id < 10){

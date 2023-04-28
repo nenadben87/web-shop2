@@ -15,7 +15,7 @@ const Outerwear = () => {
   let [products, setProducts] = useState(null)
 
   useEffect(() => {
-    fetch('http://localhost:8000/products')
+    fetch('https://products-databse.herokuapp.com/products')
       .then(response => response.json())
       .then(data => {
            setProducts(data)

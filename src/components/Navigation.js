@@ -50,7 +50,7 @@ const Navigation = () => {
      cartSum.current.textContent = '0'
    } 
 
-   fetch('http://localhost:8000/products')
+   fetch('https://products-databse.herokuapp.com/products')
        .then(response => response.json())
        .then(data => {
          setProducts(data)
