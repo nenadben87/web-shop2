@@ -61,7 +61,7 @@ const ItemContextProvider = (props) => {
     <p>ID: ${cartArr[cartArr.length - 1].id}</p>
     </div>
     </div>
-   <a href="http://localhost:3000/my-cart" class="go-to-cart">GO TO CART</a> 
+   <a href="https://nenadben87.github.io/web-shop2/my-cart" class="go-to-cart">GO TO CART</a> 
     `;
     }
  }

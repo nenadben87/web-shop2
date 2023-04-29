@@ -1,6 +1,7 @@
 {
   "name": "web-shop2",
   "version": "0.1.0",
+  "homepage": "https://nenadben87.github.io/web-shop2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
