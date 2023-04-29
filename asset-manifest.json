@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web-shop2/static/css/main.87b3f1f3.css",
-    "main.js": "/web-shop2/static/js/main.ec3d808d.js",
+    "main.js": "/web-shop2/static/js/main.bd4f06d1.js",
     "static/media/Iconic T7 Gen Puma Track Jacket-1.jpg": "/web-shop2/static/media/Iconic T7 Gen Puma Track Jacket-1.0a0acaafb4f58e03f348.jpg",
     "static/media/Rib Trim Marled V-Neck T-Shirt-1.jpg": "/web-shop2/static/media/Rib Trim Marled V-Neck T-Shirt-1.43d93353404aad9a3f18.jpg",
     "static/media/Repair Denim Jean-1.jpg": "/web-shop2/static/media/Repair Denim Jean-1.03960b540a4f84494f52.jpg",
@@ -31,10 +31,10 @@
     "static/media/men-hoodies.jpg": "/web-shop2/static/media/men-hoodies.7d12f75534e462676b7b.jpg",
     "index.html": "/web-shop2/index.html",
     "main.87b3f1f3.css.map": "/web-shop2/static/css/main.87b3f1f3.css.map",
-    "main.ec3d808d.js.map": "/web-shop2/static/js/main.ec3d808d.js.map"
+    "main.bd4f06d1.js.map": "/web-shop2/static/js/main.bd4f06d1.js.map"
   },
   "entrypoints": [
     "static/css/main.87b3f1f3.css",
-    "static/js/main.ec3d808d.js"
+    "static/js/main.bd4f06d1.js"
   ]
 }
