@@ -61,7 +61,7 @@ const ItemContextProvider = (props) => {
     <p>ID: ${cartArr[cartArr.length - 1].id}</p>
     </div>
     </div>
-   <a href="https://aquamarine-stardust-09c6c6.netlify.app/my-cart" class="go-to-cart">GO TO CART</a> 
+   <a href="https://aquamarine-stardust-09c6c6.netlify.app/#/my-cart" class="go-to-cart">GO TO CART</a> 
     `;
     }
  }
