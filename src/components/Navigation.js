@@ -120,13 +120,13 @@ const Navigation = () => {
       slicedArr = searchArr.slice(0, 10)
       slicedArr.forEach((item) => {
         searchResultEl.current.innerHTML += `<div class="product-names">
-        <a href="/products/${item.id}">${item.name}</a>
+        <a href="https://aquamarine-stardust-09c6c6.netlify.app/#/products/${item.id}">${item.name}</a>
         </div>`
       })
     } else {
       searchArr.forEach((item) => {
         searchResultEl.current.innerHTML += `<div class="product-names-two">
-        <a href="/products/${item.id}" class="product-names-wrapper">
+        <a href="https://aquamarine-stardust-09c6c6.netlify.app/#/products/${item.id}" class="product-names-wrapper">
           <img src="${item.image}">
           <div class="product-names-right">
            <p>${item.name}</p>
