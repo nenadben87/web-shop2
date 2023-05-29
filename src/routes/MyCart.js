@@ -19,9 +19,6 @@ const MyCart = () => {
   let helpArr = []
   const itemIdEl = useRef(null)
 
-  let joinedSum = sumArr.join('')
-  let evaledSum = eval(joinedSum)
-
   useEffect(() => {
    if(itemIdEl.current){
     console.log(itemIdEl.current)
