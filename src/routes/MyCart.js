@@ -19,6 +19,9 @@ const MyCart = () => {
   let helpArr = []
   const itemIdEl = useRef(null)
 
+  let joinedSum = sumArr.join('')
+  let evaledSum = eval(joinedSum)
+
   useEffect(() => {
    if(itemIdEl.current){
     console.log(itemIdEl.current)
@@ -149,7 +152,7 @@ const MyCart = () => {
               <h2 ref={subtotal}>Subtotal: ${sumArr[0].toFixed(2)}</h2>
             </div> : 
             <div>
-              <h2 ref={subtotal}>Subtotal: $0</h2>
+              <h2 ref={subtotal}>Subtotal: ${evaledSum}</h2>
             </div>
            }
          </div>
